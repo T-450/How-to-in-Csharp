@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "rHB5uzxwUaigz/tUeO7JmotTLHzqWqbDHQ7rAqV2QSkxuO6/jj/GWFL8HgLdzdltEfvMT24Igc8sFlOCAjUdBA==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\edwar\\source\\projects\\How-to-in-Csharp\\HowToInCSharp\\HowToReadAndWriteCSV\\HowToReadAndWriteCSV.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\edwar\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512",
+    "C:\\Users\\edwar\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512",
+    "C:\\Users\\edwar\\.nuget\\packages\\system.io.abstractions\\16.1.15\\system.io.abstractions.16.1.15.nupkg.sha512",
+    "C:\\Users\\edwar\\.nuget\\packages\\system.io.abstractions.testinghelpers\\16.1.15\\system.io.abstractions.testinghelpers.16.1.15.nupkg.sha512"
+  ],
+  "logs": []
+}

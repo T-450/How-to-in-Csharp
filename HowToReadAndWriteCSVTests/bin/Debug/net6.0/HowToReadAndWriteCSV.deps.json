@@ -1,0 +1,85 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "HowToReadAndWriteCSV/1.0.0": {
+        "dependencies": {
+          "CsvHelper": "27.2.1",
+          "StyleCop.Analyzers": "1.1.118",
+          "System.IO.Abstractions": "16.1.15",
+          "System.IO.Abstractions.TestingHelpers": "16.1.15"
+        },
+        "runtime": {
+          "HowToReadAndWriteCSV.dll": {}
+        }
+      },
+      "CsvHelper/27.2.1": {
+        "runtime": {
+          "lib/net6.0/CsvHelper.dll": {
+            "assemblyVersion": "27.0.0.0",
+            "fileVersion": "27.2.1.0"
+          }
+        }
+      },
+      "StyleCop.Analyzers/1.1.118": {},
+      "System.IO.Abstractions/16.1.15": {
+        "runtime": {
+          "lib/net6.0/System.IO.Abstractions.dll": {
+            "assemblyVersion": "16.0.0.0",
+            "fileVersion": "16.1.15.53966"
+          }
+        }
+      },
+      "System.IO.Abstractions.TestingHelpers/16.1.15": {
+        "dependencies": {
+          "System.IO.Abstractions": "16.1.15"
+        },
+        "runtime": {
+          "lib/net6.0/System.IO.Abstractions.TestingHelpers.dll": {
+            "assemblyVersion": "16.0.0.0",
+            "fileVersion": "16.1.15.53966"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HowToReadAndWriteCSV/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CsvHelper/27.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uS5ix5hL9gL5taiAG//CScyJa8Fn1ZOh3FDhDvf4laboESFs84mCNropfp7PIt8xCkyQofljFpqu1B5UnSXjyA==",
+      "path": "csvhelper/27.2.1",
+      "hashPath": "csvhelper.27.2.1.nupkg.sha512"
+    },
+    "StyleCop.Analyzers/1.1.118": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Onx6ovGSqXSK07n/0eM3ZusiNdB6cIlJdabQhWGgJp3Vooy9AaLS/tigeybOJAobqbtggTamoWndz72JscZBvw==",
+      "path": "stylecop.analyzers/1.1.118",
+      "hashPath": "stylecop.analyzers.1.1.118.nupkg.sha512"
+    },
+    "System.IO.Abstractions/16.1.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rRbsPoAS5tlb0xZqg3GwCBFVyDg0H280btPGiHZHI+tAV3PQuNS5kW+UlUh4WcDgUIZn9OY6DKR8Dmnl13lhBg==",
+      "path": "system.io.abstractions/16.1.15",
+      "hashPath": "system.io.abstractions.16.1.15.nupkg.sha512"
+    },
+    "System.IO.Abstractions.TestingHelpers/16.1.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0OzbR/uc8BkJSuaM4CuIkE1p7MNee1U3UsJQViu1F1M74gaOHKUhyw/pbXHcDaqYHGVIySOjX5lIrrbza+FrgA==",
+      "path": "system.io.abstractions.testinghelpers/16.1.15",
+      "hashPath": "system.io.abstractions.testinghelpers.16.1.15.nupkg.sha512"
+    }
+  }
+}

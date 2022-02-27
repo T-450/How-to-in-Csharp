@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "HowToReadAndWriteCSV": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\psdata\\contacts.csv"
+    }
+  }
+}

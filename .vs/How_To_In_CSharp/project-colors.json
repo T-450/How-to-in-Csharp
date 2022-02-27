@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "aa6b7c01-e324-4725-8d75-f083f1b55236": {
+      "ProjectGuid": "aa6b7c01-e324-4725-8d75-f083f1b55236",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 0
+    },
+    "8cd1ebe0-bdd6-4c88-84eb-d82e556898fa": {
+      "ProjectGuid": "8cd1ebe0-bdd6-4c88-84eb-d82e556898fa",
+      "DisplayName": "HowToReadAndWriteCSV",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "e72791f6-67bf-4560-98a9-a9546b2800b0": {
+      "ProjectGuid": "e72791f6-67bf-4560-98a9-a9546b2800b0",
+      "DisplayName": "HowToReadAndWriteCSVTests",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
