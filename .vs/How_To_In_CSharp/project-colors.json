@@ -20,7 +20,12 @@
       "ProjectGuid": "e72791f6-67bf-4560-98a9-a9546b2800b0",
       "DisplayName": "HowToReadAndWriteCSVTests",
       "ColorIndex": 2
+    },
+    "7959680b-b13f-4f89-a2fe-1de22faeba90": {
+      "ProjectGuid": "7959680b-b13f-4f89-a2fe-1de22faeba90",
+      "DisplayName": "HowToReadAndWriteCSVTests",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }

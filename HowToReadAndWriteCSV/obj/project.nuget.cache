@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rHB5uzxwUaigz/tUeO7JmotTLHzqWqbDHQ7rAqV2QSkxuO6/jj/GWFL8HgLdzdltEfvMT24Igc8sFlOCAjUdBA==",
+  "dgSpecHash": "VEFAraDynOaCxC8F26lXNbdT3POBgVsKesQ19D2+mGpLfesVVg4BO76wh+iU9QaVNn8WVY/orwokolHeGwkBUg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\edwar\\source\\projects\\How-to-in-Csharp\\HowToInCSharp\\HowToReadAndWriteCSV\\HowToReadAndWriteCSV.csproj",
+  "projectFilePath": "C:\\Users\\edwar\\source\\projects\\How-to-in-Csharp\\HowToInCSharp\\HowToReadAndWriteCSV\\HowToReadAndWriteCSV.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\edwar\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512",
     "C:\\Users\\edwar\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512",

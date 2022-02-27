@@ -7,7 +7,6 @@ C:\Users\edwar\source\projects\How-to-in-Csharp\HowToInCSharp\HowToReadAndWriteC
 C:\Users\edwar\source\projects\How-to-in-Csharp\HowToInCSharp\HowToReadAndWriteCSV\bin\Debug\net6.0\CsvHelper.dll
 C:\Users\edwar\source\projects\How-to-in-Csharp\HowToInCSharp\HowToReadAndWriteCSV\bin\Debug\net6.0\System.IO.Abstractions.dll
 C:\Users\edwar\source\projects\How-to-in-Csharp\HowToInCSharp\HowToReadAndWriteCSV\bin\Debug\net6.0\System.IO.Abstractions.TestingHelpers.dll
-C:\Users\edwar\source\projects\How-to-in-Csharp\HowToInCSharp\HowToReadAndWriteCSV\obj\Debug\net6.0\HowToReadAndWriteCSV.csproj.AssemblyReference.cache
 C:\Users\edwar\source\projects\How-to-in-Csharp\HowToInCSharp\HowToReadAndWriteCSV\obj\Debug\net6.0\HowToReadAndWriteCSV.Properties.Resources.resources
 C:\Users\edwar\source\projects\How-to-in-Csharp\HowToInCSharp\HowToReadAndWriteCSV\obj\Debug\net6.0\HowToReadAndWriteCSV.csproj.GenerateResource.cache
 C:\Users\edwar\source\projects\How-to-in-Csharp\HowToInCSharp\HowToReadAndWriteCSV\obj\Debug\net6.0\HowToReadAndWriteCSV.GeneratedMSBuildEditorConfig.editorconfig
