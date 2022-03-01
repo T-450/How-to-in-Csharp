@@ -2,6 +2,7 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 
 using System.IO;
+using System.IO.Abstractions;
 
 namespace HowToUseStreams.Data;
 
@@ -11,14 +12,19 @@ namespace HowToUseStreams.Data;
 /// </summary>
 public class BinaryFileProcessor
 {
-    protected string FilePath { get; set; }
-    protected string OutputFilePath { get; set; }
+    private string FilePath { get; set; }
+    private string OutputFilePath { get; set; }
+    private IFileSystem FileSystem { get; set; }
 
-    public BinaryFileProcessor(string filePath, string outputFilePath)
+    public BinaryFileProcessor(string filePath, string outputFilePath, IFileSystem fileSystem)
     {
         FilePath = filePath;
         OutputFilePath = outputFilePath;
+        this.FileSystem = fileSystem;
     }
+
+    public BinaryFileProcessor(string filePath, string outputFilePath) : this(filePath, outputFilePath, new FileSystem())
+    { }
     // <inheritdoc/>
     public void Write(byte[] data)
     {

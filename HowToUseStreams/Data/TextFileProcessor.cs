@@ -16,13 +16,13 @@ public class TextFileProcessor
     private string FilePath { get; set; }
     private string OutputFilePath { get; set; }
 
-    private IFileSystem fileSystem { get; set; }
+    private IFileSystem FileSystem { get; set; }
 
     public TextFileProcessor(string filePath, string outputFilePath, IFileSystem fileSystem)
     {
         FilePath = filePath;
         OutputFilePath = outputFilePath;
-        this.fileSystem = fileSystem;
+        this.FileSystem = fileSystem;
     }
 
     public TextFileProcessor(string filePath, string outputFilePath) : this(filePath, outputFilePath, new FileSystem())

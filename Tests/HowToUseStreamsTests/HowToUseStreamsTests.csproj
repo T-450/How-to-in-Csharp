@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HowToUseStreams\HowToUseStreams.csproj" />
+    <ProjectReference Include="..\..\HowToUseStreams\HowToUseStreams.csproj" />
   </ItemGroup>
 
 </Project>
