@@ -25,7 +25,17 @@
       "ProjectGuid": "7959680b-b13f-4f89-a2fe-1de22faeba90",
       "DisplayName": "HowToReadAndWriteCSVTests",
       "ColorIndex": 3
+    },
+    "60f8d6b6-eba4-410f-b3f7-d279c94d1ff6": {
+      "ProjectGuid": "60f8d6b6-eba4-410f-b3f7-d279c94d1ff6",
+      "DisplayName": "HowToUseStreams",
+      "ColorIndex": 4
+    },
+    "5049ce42-3dd7-4bc8-bc1f-afd4c37938a4": {
+      "ProjectGuid": "5049ce42-3dd7-4bc8-bc1f-afd4c37938a4",
+      "DisplayName": "HowToUseStreamsTests",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 6
 }
