@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HowToUseStreams", "HowToUse
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HowToUseStreamsTests", "Tests\HowToUseStreamsTests\HowToUseStreamsTests.csproj", "{F1DBAEFA-0DD1-455B-ACD8-AC373264F090}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowToWorkWithXML", "HowToWorkWithXML\HowToWorkWithXML.csproj", "{69E36922-48B2-4786-84BA-6DA72FED1D2E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{F1DBAEFA-0DD1-455B-ACD8-AC373264F090}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1DBAEFA-0DD1-455B-ACD8-AC373264F090}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1DBAEFA-0DD1-455B-ACD8-AC373264F090}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69E36922-48B2-4786-84BA-6DA72FED1D2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69E36922-48B2-4786-84BA-6DA72FED1D2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69E36922-48B2-4786-84BA-6DA72FED1D2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69E36922-48B2-4786-84BA-6DA72FED1D2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
