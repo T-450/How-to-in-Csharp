@@ -10,42 +10,46 @@ namespace HowToReadAndWriteCSV.Helpers.CSV;
 
 public class CsvFileHelper<T> : ICsvFileHelper<T>
 {
+    /// <summary>
+    ///     Mock object for testing.
+    /// </summary>
+    private readonly IFileSystem fileSystem;
+
     public CsvFileHelper(string inputFilePath, string outputFilePath, IFileSystem fileSystem)
     {
-        this.InputFilePath = inputFilePath;
-        this.OutputFilePath = outputFilePath;
+        InputFilePath = inputFilePath;
+        OutputFilePath = outputFilePath;
         this.fileSystem = fileSystem;
     }
 
     public CsvFileHelper(string inputFilePath, string outputFilePath)
         : this(inputFilePath, outputFilePath, new FileSystem())
-    { }
+    {
+    }
 
     /// <summary>
-    /// Mock object for testing.
-    /// </summary>
-    private readonly IFileSystem fileSystem;
-
-    /// <summary>
-    /// Location of the specified file
+    ///     Location of the specified file
     /// </summary>
     private string InputFilePath { get; set; }
 
     /// <summary>
-    /// Where the file should be saved - manually in Resources/Output.
+    ///     Where the file should be saved - manually in Resources/Output.
     /// </summary>
     private string OutputFilePath { get; set; }
 
     /// <summary>
-    /// Read content from CSV and return the content as objects.
+    ///     Read content from CSV and return the content as objects.
     /// </summary>
     /// <param name="filePath"></param>
     /// <returns></returns>
     public IEnumerable<T> Read(string filePath = null)
     {
-        if (filePath is not null) this.InputFilePath = filePath;
+        if (filePath is not null)
+        {
+            InputFilePath = filePath;
+        }
 
-        using StreamReader inputReader = this.fileSystem.File.OpenText(this.InputFilePath);
+        using var inputReader = fileSystem.File.OpenText(InputFilePath);
 
         var csvConfiguration = new CsvConfiguration(CultureInfo.InvariantCulture)
         {
@@ -57,7 +61,7 @@ public class CsvFileHelper<T> : ICsvFileHelper<T>
             PrepareHeaderForMatch = args => args.Header.Replace("_", string.Empty).ToLowerInvariant(),
             TrimOptions = TrimOptions.Trim,
             IgnoreBlankLines = true, // default
-            MissingFieldFound = null,
+            MissingFieldFound = null
         };
 
         using var csvReader = new CsvReader(inputReader, csvConfiguration);
@@ -67,15 +71,18 @@ public class CsvFileHelper<T> : ICsvFileHelper<T>
     }
 
     /// <summary>
-    /// Write provided data to a file that will be store in destinationPath.
+    ///     Write provided data to a file that will be store in destinationPath.
     /// </summary>
     /// <param name="data"></param>
     /// <param name="outputFilePath"></param>
     public void Write(IEnumerable<T> data, string outputFilePath = null)
     {
-        if (outputFilePath is not null) this.OutputFilePath = outputFilePath;
+        if (outputFilePath is not null)
+        {
+            OutputFilePath = outputFilePath;
+        }
 
-        using StreamWriter outputWriter = this.fileSystem.File.CreateText(this.OutputFilePath);
+        using var outputWriter = fileSystem.File.CreateText(OutputFilePath);
         using var csvWriter = new CsvWriter(outputWriter, CultureInfo.InvariantCulture);
 
         csvWriter.WriteHeader<T>();

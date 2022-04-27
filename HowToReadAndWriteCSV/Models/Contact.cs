@@ -4,7 +4,7 @@
 namespace HowToReadAndWriteCSV.Models;
 
 /// <summary>
-/// Class to represent the CSV Data.
+///     Class to represent the CSV Data.
 /// </summary>
 public class Contact
 {
@@ -26,6 +26,6 @@ public class Contact
 
     public override string ToString()
     {
-        return $"{this.Id} {this.LocationId} {this.OrganizationId} {this.ServiceId} {this.Name} {this.Title} {this.Email} {this.Department}";
+        return $"{Id} {LocationId} {OrganizationId} {ServiceId} {Name} {Title} {Email} {Department}";
     }
 }

@@ -4,7 +4,7 @@
 namespace HowToReadAndWriteCSV.Models;
 
 /// <summary>
-/// Class to represent the CSV Data.
+///     Class to represent the CSV Data.
 /// </summary>
 public class Software
 {
@@ -16,9 +16,9 @@ public class Software
 
     public string? SoftwareAlternateName { get; set; }
 
-    /// <inheritdoc/>
+    /// <inheritdoc />
     public override string ToString()
     {
-        return $"{this.SoftwareId} {this.OrganizationId} {this.SoftwareName} {this.SoftwareAlternateName}";
+        return $"{SoftwareId} {OrganizationId} {SoftwareName} {SoftwareAlternateName}";
     }
 }

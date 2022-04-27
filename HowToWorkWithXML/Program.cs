@@ -8,14 +8,19 @@ namespace HowToWorkWithXML;
 
 public class Program
 {
-    private static readonly string currentDir = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().LastIndexOf("bin"));
+    private static readonly string currentDir = Directory.GetCurrentDirectory()
+        .Substring(0, Directory.GetCurrentDirectory().LastIndexOf("bin"));
+
     private static readonly string customerFilePath = Path.Combine(currentDir, "Resources", "Customers.xml");
     private static readonly string salesOrderFilePath = Path.Combine(currentDir, "Resources", "SalesOrderHeaders.xml");
-    private static readonly string salesOrderDetailsFilePath = Path.Combine(currentDir, "Resources", "SalesOrderDetails.xml");
 
-    static void Main(string[] args)
+    private static readonly string salesOrderDetailsFilePath =
+        Path.Combine(currentDir, "Resources", "SalesOrderDetails.xml");
+
+    private static void Main(string[] args)
     {
-        var customerXmlService = new CustomerXmlService(customerFilePath, salesOrderFilePath, salesOrderDetailsFilePath);
+        var customerXmlService =
+            new CustomerXmlService(customerFilePath, salesOrderFilePath, salesOrderDetailsFilePath);
         var customers = customerXmlService.GetAllCustomers();
         var findCustomer = customerXmlService.Find(xElement => xElement.Element("CustomerID").Value == "1");
         var join = customerXmlService.Join();

@@ -1,4 +1,4 @@
-# How to read and write CSV in C#
+# How to do X in C#
 
 This project is a collection of samples showing How to do X in Csharp/.Net.
 

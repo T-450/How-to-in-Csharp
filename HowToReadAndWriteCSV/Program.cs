@@ -7,17 +7,20 @@ using HowToReadAndWriteCSV.Models;
 namespace HowToReadAndWriteCsv;
 
 /// <summary>
-/// Simple program that reads and writes CSV using CSVHelper library.
+///     Simple program that reads and writes CSV using CSVHelper library.
 /// </summary>
 public class Program
 {
-    private static readonly string currentDir = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().LastIndexOf("bin"));
+    private static readonly string currentDir = Directory.GetCurrentDirectory()
+        .Substring(0, Directory.GetCurrentDirectory().LastIndexOf("bin"));
+
     private static readonly string fileOutputPath = Path.Combine(currentDir, "Resources", "Output", "Output.csv");
+
     private static void Main(string[] args)
     {
         if (args.Length == 0)
         {
-            Console.WriteLine($"Error: Filepath should not be empty!");
+            Console.WriteLine("Error: Filepath should not be empty!");
             return;
         }
 

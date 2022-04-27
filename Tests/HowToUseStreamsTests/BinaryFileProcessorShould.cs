@@ -11,9 +11,11 @@ namespace HowToUseStreamsTests;
 
 public class BinaryFileProcessorShould
 {
-    private static string currentDir = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().LastIndexOf("bin"));
-    private static string filePath = Path.Combine(currentDir, "Resources", "BinaryFile.dat");
-    private static string outputPath = Path.Combine(currentDir, "Resources", "BinDataOutput.dat");
+    private static readonly string currentDir = Directory.GetCurrentDirectory()
+        .Substring(0, Directory.GetCurrentDirectory().LastIndexOf("bin"));
+
+    private static readonly string filePath = Path.Combine(currentDir, "Resources", "BinaryFile.dat");
+    private static readonly string outputPath = Path.Combine(currentDir, "Resources", "BinDataOutput.dat");
 
     [Fact(DisplayName = "Read contents from a specified file")]
     public void ReadContentsFromASpecifiedFile()
@@ -28,7 +30,7 @@ public class BinaryFileProcessorShould
         var sut = new BinaryFileProcessor(
             filePath,
             outputPath
-            );
+        );
         var actual = sut.Read();
         var exptected = mockInputFileData.Contents;
 
@@ -48,12 +50,12 @@ public class BinaryFileProcessorShould
         var sut = new BinaryFileProcessor(
             filePath,
             outputPath
-            );
+        );
 
         sut.Write(mockInputFileData.Contents);
 
         Assert.True(mockFileSystem.FileExists(outputPath));
-        MockFileData processedFile = mockFileSystem.GetFile(outputPath);
+        var processedFile = mockFileSystem.GetFile(outputPath);
 
         Assert.NotNull(processedFile);
         Assert.Equal(processedFile.Contents.Take(mockInputFileData.Contents.Length), mockInputFileData.Contents);

@@ -20,7 +20,8 @@ public class CsvFileHelperShould
         const string inputFileName = "myfile.csv";
         var inputFilePath = Path.Combine(inputDir, inputFileName);
 
-        const string outputDir = @"C:\root\source\projects\How-to-in-Csharp\HowToInCSharp\HowToReadAndWriteCSV\Resources\";
+        const string outputDir =
+            @"C:\root\source\projects\How-to-in-Csharp\HowToInCSharp\HowToReadAndWriteCSV\Resources\";
         const string outputFileName = "myfileout.csv";
         var outputFilePath = Path.Combine(outputDir, outputFileName);
 
@@ -46,7 +47,7 @@ public class CsvFileHelperShould
 
         Assert.True(mockFileSystem.FileExists(outputFilePath));
 
-        MockFileData processedFile = mockFileSystem.GetFile(outputFilePath);
+        var processedFile = mockFileSystem.GetFile(outputFilePath);
         Assert.NotNull(processedFile);
         var lines = processedFile.TextContents.Split(Environment.NewLine);
 

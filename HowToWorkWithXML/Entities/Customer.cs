@@ -5,121 +5,48 @@ namespace HowToWorkWithXML.Entities;
 
 public class Customer
 {
-    private int _CustomerID;
-    private string _Title;
-    private string _FirstName;
-    private string _MiddleName;
-    private string _LastName;
-    private string _CompanyName;
-    private string _SalesPerson;
-    private string _EmailAddress;
-    private string _Phone;
+    /// <summary>
+    ///     Get/Set CustomerID
+    /// </summary>
+    public int CustomerID { get; set; }
 
     /// <summary>
-    /// Get/Set CustomerID
+    ///     Get/Set Title
     /// </summary>
-    public int CustomerID
-    {
-        get { return _CustomerID; }
-        set
-        {
-            _CustomerID = value;
-        }
-    }
+    public string Title { get; set; }
 
     /// <summary>
-    /// Get/Set Title
+    ///     Get/Set FirstName
     /// </summary>
-    public string Title
-    {
-        get { return _Title; }
-        set
-        {
-            _Title = value;
-        }
-    }
+    public string FirstName { get; set; }
 
     /// <summary>
-    /// Get/Set FirstName
+    ///     Get/Set MiddleName
     /// </summary>
-    public string FirstName
-    {
-        get { return _FirstName; }
-        set
-        {
-            _FirstName = value;
-        }
-    }
+    public string MiddleName { get; set; }
 
     /// <summary>
-    /// Get/Set MiddleName
+    ///     Get/Set LastName
     /// </summary>
-    public string MiddleName
-    {
-        get { return _MiddleName; }
-        set
-        {
-            _MiddleName = value;
-        }
-    }
+    public string LastName { get; set; }
 
     /// <summary>
-    /// Get/Set LastName
+    ///     Get/Set CompanyName
     /// </summary>
-    public string LastName
-    {
-        get { return _LastName; }
-        set
-        {
-            _LastName = value;
-        }
-    }
+    public string CompanyName { get; set; }
 
     /// <summary>
-    /// Get/Set CompanyName
+    ///     Get/Set SalesPerson
     /// </summary>
-    public string CompanyName
-    {
-        get { return _CompanyName; }
-        set
-        {
-            _CompanyName = value;
-        }
-    }
+    public string SalesPerson { get; set; }
 
     /// <summary>
-    /// Get/Set SalesPerson
+    ///     Get/Set EmailAddress
     /// </summary>
-    public string SalesPerson
-    {
-        get { return _SalesPerson; }
-        set
-        {
-            _SalesPerson = value;
-        }
-    }
+    public string EmailAddress { get; set; }
 
     /// <summary>
-    /// Get/Set EmailAddress
+    ///     Get/Set Phone
     /// </summary>
-    public string EmailAddress
-    {
-        get { return _EmailAddress; }
-        set
-        {
-            _EmailAddress = value;
-        }
-    }
-
-    /// <summary>
-    /// Get/Set Phone
-    /// </summary>
-    public string Phone
-    {
-        get { return _Phone; }
-        set
-        {
-            _Phone = value;
-        }
-    }
+    public string Phone { get; set; }
 }
